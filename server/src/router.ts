@@ -2,6 +2,14 @@ import express from "express";
 
 const router = express.Router();
 
+import sayActions from "./modules/say/sayAction";
+
+router.get("/", sayActions.sayWelcome);
+
+import browse from "./modules/program/programActions"
+
+router.get("/api/programs", browse.browse );
+
 /* ************************************************************************* */
 // Define Your API Routes Here
 /* ************************************************************************* */

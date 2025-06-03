@@ -1,10 +1,6 @@
-import express, { RequestHandler } from "express";
 
-const sayWelcome: RequestHandler = (req, res) => {
-  res.send("Welcome to Wild Series !");
-};
 
-app.get("/", sayWelcome);
+
 
 // Load environment variables from .env file
 import "dotenv/config";
